@@ -19,7 +19,7 @@ Route::get('/', function (Shoe $shoe) {
 
     $shoes = Shoe::all();
     return view('home', compact('shoes'));
-});
+})->name('home');
 
 
 
